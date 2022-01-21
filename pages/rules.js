@@ -16,6 +16,22 @@ const RuleDetails = ({ children }) => {
     );
 };
 
+const TableHeader = ({ children }) => {
+    return (
+        <th className="text-right font-bold">
+            {children}
+        </th>
+    );
+};
+
+const TableCell = ({ children }) => {
+    return (
+        <td className="text-right">
+            {children}
+        </td>
+    );
+};
+
 const rules = () => {
   return (
     <div>
@@ -43,12 +59,71 @@ const rules = () => {
         <RuleHeading>
             Payouts
         </RuleHeading>
-            
+        <div>
+            Number of places paid is 1 place per table plus 1. e.g. if there are 4 tables in play, then 5 places will be paid. Any changes to the payouts are at the discretion of the remaining players.
+        </div>
+        <table className="w-full border-y-2 py-2 my-4 border-secondary">
+            <thead>
+                <tr>
+                    <TableHeader>Place</TableHeader>
+                    <TableHeader>Up to 8 players</TableHeader>
+                    <TableHeader>9-16 players</TableHeader>
+                    <TableHeader>17-24 players</TableHeader>
+                    <TableHeader>24-32 players</TableHeader>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <TableCell>1st</TableCell>
+                    <TableCell>65%</TableCell>
+                    <TableCell>50%</TableCell>
+                    <TableCell>46%</TableCell>
+                    <TableCell>43%</TableCell>
+                </tr>
+                <tr>
+                    <TableCell>2nd</TableCell>
+                    <TableCell>35%</TableCell>
+                    <TableCell>30%</TableCell>
+                    <TableCell>26%</TableCell>
+                    <TableCell>23%</TableCell>
+                </tr>
+                <tr>
+                    <TableCell>3rd</TableCell>
+                    <TableCell>-</TableCell>
+                    <TableCell>20%</TableCell>
+                    <TableCell>16%</TableCell>
+                    <TableCell>13%</TableCell>
+                </tr>
+                <tr>
+                    <TableCell>4th</TableCell>
+                    <TableCell>-</TableCell>
+                    <TableCell>-</TableCell>
+                    <TableCell>12%</TableCell>
+                    <TableCell>12%</TableCell>
+                </tr>
+                <tr>
+                    <TableCell>5th</TableCell>
+                    <TableCell>-</TableCell>
+                    <TableCell>-</TableCell>
+                    <TableCell>-</TableCell>
+                    <TableCell>9%</TableCell>
+                </tr>
+            </tbody>
+        </table>
+
+
         <RuleHeading>
             Table Balancing
         </RuleHeading>
+        <div>Tables will be balanced as necessary and broken in reversed order, leaving table no.1 as the final table.</div>
 
-        Blinds go up dealers first rifle.
+        <RuleHeading>
+            Common mistakes
+        </RuleHeading>
+        <div>We all bet out of turn occasionally and accidentally fold the hand! Here are some common mistakes to lookout for. Dealers will be enforcing these rules.</div>
+        <RuleDetails>When the chime goes off for blinds up, the cut-off is the dealers first rifle shuffle. It does not matter if your blind was already in.</RuleDetails>
+        <RuleDetails>If your hole cards touch the muck, they are dead.</RuleDetails>
+        <RuleDetails>2 cards are required to claim a pot at showdown, even if the other player mucks their hand.</RuleDetails>
 
       </main>
     </div>
