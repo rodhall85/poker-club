@@ -54,8 +54,8 @@ export default function Home({ tournaments: { tournaments } }) {
                   <div>{name}</div>
                   <div>&pound;{buyIn}</div>
                   <div>{clock}</div>
-                  <div>{chips}</div>
-                  <div>{bonus}</div>
+                  <div>{chips} TBC</div>
+                  <div>{bonus} TBC</div>
                   <div>{maxPlayers}</div>
                   <div>{description}</div>
                 </div>

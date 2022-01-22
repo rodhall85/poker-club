@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
+        dosis: ['Dosis', 'sans-serif'],
       },
       colors: {
         primary: "#bd1e51",
