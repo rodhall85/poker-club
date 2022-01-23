@@ -77,29 +77,9 @@ const Structures = ({ structures: { structures } }) => {
     console.log('ff', structures);
     return (
         <div>
-            <main className="mx-auto w-full sm:w-9/12 lg:w-7/12 px-4 mt-4">
+            <main className="mx-auto w-11/12 sm:w-9/12 lg:w-6/12 xl:w-4/12 px-4 mt-4">
                 <h2 className="text-2xl font-bold">Tournament Structures</h2>
-                
                 <StructureTabs structures={structures} />
-
-                {/* {structures && structures.map(({ levels: {
-                    level,
-                    smallBlind,
-                    bigBlind,
-                    ante,
-                    minutes,
-                } }, index) => {
-                    console.log('stuff')
-                    return (
-                        <div key={`structure-${index}`} className="flex text-right w-9/12 mx-auto">
-                            <div className="w-1/12">{level}</div>
-                            <div className="w-3/12">{smallBlind}</div>
-                            <div className="w-3/12">{bigBlind}</div>
-                            <div className="w-3/12">{ante}</div>
-                            <div className="w-2/12">{minutes}</div>
-                        </div>
-                    );
-                })} */}
             </main>
         </div>
     );

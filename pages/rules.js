@@ -18,7 +18,7 @@ const RuleDetails = ({ children }) => {
 
 const TableHeader = ({ children }) => {
     return (
-        <th className="text-right font-bold">
+        <th className="text-right font-bold px-1">
             {children}
         </th>
     );
@@ -35,7 +35,7 @@ const TableCell = ({ children }) => {
 const rules = () => {
   return (
     <div>
-      <main className="mx-auto w-full sm:w-9/12 lg:w-7/12 px-4 mt-4">
+      <main className="mx-auto w-11/12 sm:w-9/12 lg:w-7/12 xl:w-4/12 px-4 mt-4">
         <h2 className="text-2xl font-bold">Rules</h2>
         <div>We follow the <a className="underline text-primary hover:text-secondary" href="https://www.internationalpokerrules.com/poker-rules/" target="_blank" rel="noreferrer">International Poker Rules.</a> with only 1 notable exception:</div>
         <RuleDetails>2 cards are required to claim a pot at showdown, even if the other player mucks their hand. Rule 62.6 - The last man standing rule does not apply.</RuleDetails>
