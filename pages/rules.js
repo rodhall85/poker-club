@@ -37,8 +37,8 @@ const rules = () => {
     <div>
       <main className="mx-auto w-full sm:w-9/12 lg:w-7/12 px-4 mt-4">
         <h2 className="text-2xl font-bold">Rules</h2>
-        <div>We follow the <a className="underline text-primary hover:text-secondary" href="https://www.internationalpokerrules.com/poker-rules/" target="_blank" rel="noreferrer">International Poker Rules.</a> with no notable exceptions.</div>
-        <div>Please have a read at your leisure!</div>
+        <div>We follow the <a className="underline text-primary hover:text-secondary" href="https://www.internationalpokerrules.com/poker-rules/" target="_blank" rel="noreferrer">International Poker Rules.</a> with only 1 notable exception:</div>
+        <RuleDetails>2 cards are required to claim a pot at showdown, even if the other player mucks their hand. Rule 62.6 - The last man standing rule does not apply.</RuleDetails>
         <RuleHeading>
             Dealers
         </RuleHeading>
@@ -123,7 +123,6 @@ const rules = () => {
         <div>We all bet out of turn occasionally and accidentally fold the hand! Here are some common mistakes to lookout for. Dealers will be enforcing these rules.</div>
         <RuleDetails>When the chime goes off for blinds up, the cut-off is the dealers first rifle shuffle. It does not matter if your blind was already in.</RuleDetails>
         <RuleDetails>If your hole cards touch the muck, they are dead.</RuleDetails>
-        <RuleDetails>2 cards are required to claim a pot at showdown, even if the other player mucks their hand.</RuleDetails>
 
       </main>
     </div>

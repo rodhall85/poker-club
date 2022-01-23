@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import { getTournaments } from '../lib/tournaments';
 
 export async function getStaticProps() {
@@ -10,11 +12,27 @@ export async function getStaticProps() {
 }
 
 export default function Home({ tournaments: { tournaments } }) {
-  console.log('t', tournaments);
   return (
     <div className="w-full">
       <main className="mx-auto w-full sm:w-10/12 md:w-9/12 lg:w-6/12 py-4">
-        <h2 className="text-2xl font-bold">Tournament Schedule</h2>
+        <div className="lg:flex">
+          <div className="w-full lg:w-6/12">
+            <Image
+              src="/images/poker-table-cover.jpg"
+              alt="Poker Table"
+              width={2048}
+              height={1536}
+            />
+          </div>
+          <div className="w-full lg:w-6/12 text-center p-4 text-lg">
+            <p>The <strong>Ivy Leaf Poker Club</strong> is completely revamping poker with bigger games, better structures, designated dealers to give a truly <strong>outstanding</strong>&nbsp;experience!</p>
+            <br />
+            <p>Here you will find information about future games including blind structures and rules. There will be a write-up and results posted in case you miss the&nbsp;action.</p>
+            <br />
+            <p>If you would like to play, <strong>register</strong> on the website (coming soon!) or book your seat with&nbsp;Rod.</p>
+          </div>
+        </div>
+        <h2 className="text-2xl font-bold mt-8">Tournament Schedule</h2>
         { tournaments && tournaments.map(({fields: {
           name,
           description,
