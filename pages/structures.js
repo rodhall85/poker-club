@@ -77,7 +77,7 @@ const Structures = ({ structures: { structures } }) => {
     console.log('ff', structures);
     return (
         <div>
-            <main className="mx-auto w-11/12 sm:w-9/12 lg:w-6/12 xl:w-4/12 px-4 mt-4">
+            <main className="mx-auto w-11/12 sm:w-9/12 lg:w-7/12 xl:w-6/12 px-4 mt-4">
                 <h2 className="text-2xl font-bold">Tournament Structures</h2>
                 <StructureTabs structures={structures} />
             </main>
