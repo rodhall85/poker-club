@@ -32,7 +32,7 @@ export default function Home({ tournaments: { tournaments } }) {
             <p>If you would like to play, <strong>register</strong> on the website (coming soon!) or book your seat with&nbsp;Rod.</p>
           </div>
         </div>
-        <h2 className="text-2xl font-bold mt-8">Tournament Schedule</h2>
+        <h2 className="text-2xl font-bold mt-8 px-4">Tournament Schedule</h2>
         { tournaments && tournaments.map(({fields: {
           name,
           description,
@@ -61,15 +61,20 @@ export default function Home({ tournaments: { tournaments } }) {
               <div className="flex w-full">
                 <div className="w-1/2 text-right px-2 my-2">
                   <div>Name:</div>
+                  <div>Start Time:</div>
                   <div>Buy-in:</div>
                   <div>Clock:</div>
                   <div>Chips:</div>
-                  <div>Bonus:</div>
+                  <div>Early reg bonus:</div>
                   <div>Max&nbsp;players:</div>
                   <div>Details:</div>
                 </div>
                 <div className="w-1/2 text-left px-2 my-2">
                   <div>{name}</div>
+                  <div>{new Date(startTime).toLocaleTimeString("en-GB", {
+                    hour: '2-digit',
+                    minute: '2-digit',
+                  })}</div>
                   <div>&pound;{buyIn}</div>
                   <div>{clock}</div>
                   <div>{chips} TBC</div>
