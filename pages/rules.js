@@ -92,21 +92,21 @@ const rules = () => {
                     <TableCell>-</TableCell>
                     <TableCell>20%</TableCell>
                     <TableCell>16%</TableCell>
-                    <TableCell>13%</TableCell>
+                    <TableCell>15%</TableCell>
                 </tr>
                 <tr>
                     <TableCell>4th</TableCell>
                     <TableCell>-</TableCell>
                     <TableCell>-</TableCell>
                     <TableCell>12%</TableCell>
-                    <TableCell>12%</TableCell>
+                    <TableCell>11%</TableCell>
                 </tr>
                 <tr>
                     <TableCell>5th</TableCell>
                     <TableCell>-</TableCell>
                     <TableCell>-</TableCell>
                     <TableCell>-</TableCell>
-                    <TableCell>9%</TableCell>
+                    <TableCell>8%</TableCell>
                 </tr>
             </tbody>
         </table>
