@@ -6,13 +6,13 @@ const Footer = () => {
             <div className="container mx-auto px-4 w-full m:w-9/12 lg:w-6/12">
                 <div className="p-4 text-center max-w-lg mx-auto">
                     <p>
-                        The Ivy Leaf Poker Club games are licensed by the Gambling Commision strictly for Ivy Leaf Club members only.
+                        The Ivy Leaf Poker Club games are licensed by the Gambling&nbsp;Commision strictly for Ivy Leaf Club members&nbsp;only.
                     </p>
                     <p className="py-4">
-                        Anyone that registers to play that is not a member will be refused entry.
+                        Anyone that registers to play that is not a member will be refused&nbsp;entry.
                     </p>
                     <p>
-                        This website is soley for the entertainment of the club members, for upcoming games and for the results.
+                        This website is soley for the entertainment of the club members, for upcoming games and for the&nbsp;results.
                     </p>
                 </div>
                 <div className="flex w-64 mx-auto">

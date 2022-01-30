@@ -25,11 +25,11 @@ export default function Header() {
             </h1>
           </a>
         </Link>
-        <div className="ml-auto flow-root flex-1">
+        {/* <div className="ml-auto flow-root flex-1">
           <Link href="/signup"><a className="float-right">Sign Up</a></Link> 
           <div className="float-right mx-2">or</div>
           <Link href="/login"><a className="float-right">Login</a></Link> 
-        </div>
+        </div> */}
         <button
           className=' inline-flex p-3 hover:bg-primary rounded lg:hidden text-white ml-auto hover:text-white outline-none'
           onClick={handleClick}

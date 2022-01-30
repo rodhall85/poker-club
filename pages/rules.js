@@ -118,11 +118,10 @@ const rules = () => {
         <div>Tables will be balanced as necessary and broken in reversed order, leaving table no.1 as the final table.</div>
 
         <RuleHeading>
-            Common mistakes
+            General
         </RuleHeading>
-        <div>We all bet out of turn occasionally and accidentally fold the hand! Here are some common mistakes to lookout for. Dealers will be enforcing these rules.</div>
         <RuleDetails>When the chime goes off for blinds up, the cut-off is the dealers first rifle shuffle. It does not matter if your blind was already in.</RuleDetails>
-        <RuleDetails>If your hole cards touch the muck, they are dead.</RuleDetails>
+        <RuleDetails>It is the players responsibility to protect their hole cards. If your hole cards touch the muck, they are dead. We recommend using a card protector or single chip for this.</RuleDetails>
 
       </main>
     </div>

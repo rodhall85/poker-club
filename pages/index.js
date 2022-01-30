@@ -77,17 +77,17 @@ export default function Home({ tournaments: { tournaments } }) {
                   })}</div>
                   <div>&pound;{buyIn}</div>
                   <div>{clock}</div>
-                  <div>{chips} TBC</div>
-                  <div>{bonus} TBC</div>
+                  <div>{chips}</div>
+                  <div>{bonus}</div>
                   <div>{maxPlayers}</div>
                   <div>{description}</div>
                 </div>
               </div>
-              { index === 0 && (
+              {/* { index === 0 && (
                 <button className="py-2 px-4 bg-primary text-white font-bold rounded-xl">
                   Register now!
                 </button>
-              )}
+              )} */}
             </div>
           );
         })}
