@@ -1,5 +1,7 @@
 import React from "react";
 
+import Button from '../components/Button';
+
 const RuleHeading = ({ children }) => {
     return (
         <div className="text-xl font-bold mt-2">
@@ -123,6 +125,9 @@ const rules = () => {
         <RuleDetails>When the chime goes off for blinds up, the cut-off is the dealers first rifle shuffle. It does not matter if your blind was already in.</RuleDetails>
         <RuleDetails>It is the players responsibility to protect their hole cards. If your hole cards touch the muck, they are dead. We recommend using a card protector or single chip for this.</RuleDetails>
 
+        <div className="flex p-4">
+            <Button text="Structures" link="structures" />
+        </div>
       </main>
     </div>
   );

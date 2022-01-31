@@ -1,11 +1,10 @@
 import { useState } from 'react';
-
-import { getStructures } from "../lib/tournaments";
-
 import { Tab } from '@headlessui/react'
 
+import { getStructures } from "../lib/tournaments";
+import Button from '../components/Button';
+
 const StructureTabs = ({ structures }) => {
-    console.log('ey', structures)
     return (
         <Tab.Group>
             <Tab.List className="w-full flex mx-auto border bg-gradient-to-r from-primary to-secondary rounded-3xl my-4">
@@ -37,7 +36,6 @@ const StructureTabs = ({ structures }) => {
                             {levels && levels
                                 .filter(level => level.name === name)
                                 .map(({ level, smallBlind, bigBlind, bigBlindAnte, minutes, breakMinutes }, index) => {
-                                    console.log('levels', levels, breakMinutes);
                                     return (
                                         <>
                                             <div key={`structure-${index}`} className="flex text-right">
@@ -73,13 +71,16 @@ export async function getStaticProps() {
 };
 
 const Structures = ({ structures: { structures } }) => {
-    const [selectedStructure, setSelectedStructure] = useState(structures[0]);
-    console.log('ff', structures);
     return (
         <div>
             <main className="mx-auto w-11/12 sm:w-9/12 lg:w-7/12 xl:w-6/12 px-4 mt-4">
                 <h2 className="text-2xl font-bold">Tournament Structures</h2>
                 <StructureTabs structures={structures} />
+                <div className="flex p-4">
+                    <Button text="Home" link="/" />
+                    <div className='flex-1'></div>
+                    <Button text="Rules" link="rules" right />
+                </div>
             </main>
         </div>
     );

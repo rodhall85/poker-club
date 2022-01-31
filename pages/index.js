@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import Button from '../components/Button';
 import { getTournaments } from '../lib/tournaments';
 
 export async function getStaticProps() {
@@ -91,6 +92,11 @@ export default function Home({ tournaments: { tournaments } }) {
             </div>
           );
         })}
+            
+        <div className="flex p-4">
+            <div className='flex-1'></div>
+            <Button text="Structures" link="/structures" right />
+        </div>
       </main>
     </div>
   )
