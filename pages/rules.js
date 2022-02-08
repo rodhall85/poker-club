@@ -124,7 +124,8 @@ const rules = () => {
         </RuleHeading>
         <RuleDetails>When the chime goes off for blinds up, the cut-off is the dealers first rifle shuffle. It does not matter if your blind was already in.</RuleDetails>
         <RuleDetails>It is the players responsibility to protect their hole cards. If your hole cards touch the muck, they are dead. We recommend using a card protector or single chip for this.</RuleDetails>
-
+        <RuleDetails>Underaises are considered calls unless it is 50% or more than the current raise. In which case the player must make the minimum raise.</RuleDetails>
+ 
         <div className="flex p-4">
             <Button text="Structures" link="structures" />
         </div>
