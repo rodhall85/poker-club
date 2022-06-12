@@ -17,7 +17,6 @@ const Footer = () => {
                 </div>
                 <div className="flex w-64 mx-auto">
                      <div className="underline p-2 flex-1"><Link href="/"><a>Home</a></Link></div>
-                     <div className="underline p-2 flex-1 text-left"><Link href="/results"><a>Results</a></Link></div>
                      <div className="underline p-2 flex-1 text-right"><Link href="/structures"><a>Structures</a></Link></div>
                      <div className="underline p-2 flex-1 text-right"><Link href="/rules"><a>Rules</a></Link></div>
                 </div>

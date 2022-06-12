@@ -30,7 +30,7 @@ export default function Home({ tournaments: { tournaments } }) {
             <br />
             <p>Here you will find information about future games including blind structures and rules. There will be a write-up and results posted in case you miss the&nbsp;action.</p>
             <br />
-            <p>If you would like to play, <strong>register</strong> on the website (coming soon!) or book your seat with&nbsp;Rod.</p>
+            <p>If you would like to play, give the Ivy Leaf club a call on 01733 202579</p>
           </div>
         </div>
         <h2 className="text-2xl font-bold mt-8 px-4">Tournament Schedule</h2>

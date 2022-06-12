@@ -61,11 +61,6 @@ export default function Header() {
                 Home
               </a>
             </Link>
-            <Link href='/results'>
-              <a onClick={() => setActive(false)} className='lg:inline-flex lg:w-auto lg:text-xl w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-primary'>
-                Results
-              </a>
-            </Link>
             <Link href='/structures'>
               <a onClick={() => setActive(false)} className='lg:inline-flex lg:w-auto lg:text-xl w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-primary'>
                 Structures
