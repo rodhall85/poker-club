@@ -16,9 +16,9 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="flex w-64 mx-auto">
-                     <div className="underline p-2 flex-1"><Link href="/"><a>Home</a></Link></div>
-                     <div className="underline p-2 flex-1 text-right"><Link href="/structures"><a>Structures</a></Link></div>
-                     <div className="underline p-2 flex-1 text-right"><Link href="/rules"><a>Rules</a></Link></div>
+                     <div className="underline p-2 flex-1"><Link href="/">Home</Link></div>
+                     <div className="underline p-2 flex-1 text-right"><Link href="/structures">Structures</Link></div>
+                     <div className="underline p-2 flex-1 text-right"><Link href="/rules">Rules</Link></div>
                 </div>
                 <div className="p-4 w-full">
                     <div className="w-full flex">
@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
-    )
+    );
 };
 
 export default Footer;

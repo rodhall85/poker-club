@@ -6,8 +6,8 @@ const Button = ({text, link, right}) => {
 
     return (
         <button className="bg-secondary hover:bg-primary text-white font-bold rounded-xl p-4 float-right">
-            <Link href={link}>
-                <a className="text-white">{buttonText}</a>
+            <Link href={link} className="text-white">
+                {buttonText}
             </Link>
         </button>
     );

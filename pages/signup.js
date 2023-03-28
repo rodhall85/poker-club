@@ -9,7 +9,7 @@ const signup = () => {
             <div className="flex">
                 <p className="mr-1">Already have an account?</p>
                 <Link href="/login">
-                    <a>Login</a>
+                    Login
                 </Link>
             </div>
         </div>
